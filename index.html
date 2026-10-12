@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>For Asipho</title>
+<title>For Ziyanda</title>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 <style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -59,7 +59,7 @@ html,body{margin:0;height:100%;background:#000;color:#ff7ab8;font-family:'Caveat
   <div class="pin-card">
     <div class="eyebrow">A little something, just for you</div>
     <div class="mini-heart">&hearts;</div>
-    <h1>For you,<br><i>Asipho.</i></h1>
+    <h1>For you,<br><i>My Love.</i></h1>
     <p>Some things are worth unlocking.<br>Enter the date that made today possible.</p>
     <form id="pinForm">
       <input id="pinInput" class="pin-input" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="DDMMYYYY" aria-label="Birthday PIN" required>
@@ -73,7 +73,7 @@ html,body{margin:0;height:100%;background:#000;color:#ff7ab8;font-family:'Caveat
 <div class="s" id="mx"><canvas id="cv"></canvas><div id="cd">3</div><div id="ttl" style="display:none"></div></div>
 
 <div class="s" id="gifts">
-<h2>Three gifts for you, Asipho &#127872;</h2>
+<h2>Three gifts for you Asipho &#127872;</h2>
 <div class="row">
 <div class="box" data-n="1" style="--c:#ff7ab8;--d:#e0407f"><div class="l"></div><div class="b"></div></div>
 <div class="box" data-n="2" style="--c:#ff9a9e;--d:#e56b72"><div class="l"></div><div class="b"></div></div>
@@ -88,7 +88,7 @@ html,body{margin:0;height:100%;background:#000;color:#ff7ab8;font-family:'Caveat
 const $=s=>document.querySelector(s);
 const show=id=>{document.querySelectorAll('.s').forEach(e=>e.classList.remove('on'));$(id).classList.add('on')};
 // PIN: 12 Oct 2006 (DDMMYYYY or MMDDYYYY)
-const OK=['12102006','10122006'];
+const OK=['12102005','10122005'];
 $('#pinForm').addEventListener('submit',e=>{e.preventDefault();const v=$('#pinInput').value.replace(/\D/g,'');
  if(OK.includes(v)){start()}else{$('#pinError').textContent='Not quite, think of today \u2665';const c=document.querySelector('.pin-card');c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake')}});
 function makeRain(id,count=55){const host=document.getElementById(id);
